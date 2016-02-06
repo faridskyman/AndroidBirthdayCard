@@ -8,11 +8,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    public final static String EXTRA_MESSAGE = "com.wizlearn.farid.birthdayibrahimcrd.MESSAGE";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +68,12 @@ public class MainActivity extends ActionBarActivity {
 
     public void goToPage2(View view)
     {
-        Intent intent = new Intent(MainActivity.this, MainActivityTwo.class);
+        Intent intent = new Intent(this, MainActivityTwo.class);
+
+        EditText eTxt = (EditText)findViewById(R.id.eTxtMsg);
+        String msg = eTxt.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,msg);
+
         startActivity(intent);
     }
 

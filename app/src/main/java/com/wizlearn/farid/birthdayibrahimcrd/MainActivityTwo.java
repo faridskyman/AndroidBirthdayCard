@@ -1,9 +1,12 @@
 package com.wizlearn.farid.birthdayibrahimcrd;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 
 public class MainActivityTwo extends ActionBarActivity {
@@ -12,7 +15,21 @@ public class MainActivityTwo extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity_two);
+
+
+
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        TextView txtView = new TextView(this);
+        txtView.setTextSize(40);
+        txtView.setText(message);
+
+        RelativeLayout rlo = (RelativeLayout)findViewById(R.id.rlContent);
+        rlo.addView(txtView);
     }
+
+
+
 
 
     @Override

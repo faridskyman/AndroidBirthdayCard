@@ -11,10 +11,13 @@
 
     <ImageView
         android:layout_width="400dp"
-        android:layout_height="300dp"
+        android:layout_height="100dp"
         android:scaleType="centerCrop"
         android:src="@drawable/cakesmall" />
-
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTxtMsg" />
     <TextView
         android:text="Happy 3rd Birthday!"
         android:layout_width="wrap_content"
@@ -33,6 +36,9 @@
         android:scrollbars="vertical"
 
         android:id="@+id/txtMsg" />
+
+
+
 
     <Button
         android:layout_width="wrap_content"
