@@ -1,5 +1,6 @@
 package com.wizlearn.farid.birthdayibrahimcrd;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
@@ -29,6 +30,10 @@ public class MainActivity extends ActionBarActivity {
                 "Dont ever miss your daily solat.");
         myTxt.setMovementMethod(new ScrollingMovementMethod());
 
+
+
+        ///button go action
+
         Button btnGo = (Button)findViewById(R.id.btn_go);
 
         btnGo.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +42,30 @@ public class MainActivity extends ActionBarActivity {
                 Toast.makeText(getApplicationContext(),"Happy Birthday Ibrahim!!!", Toast.LENGTH_LONG).show();
             }
         });
+
+
+        //button page 2 action
+
+        Button btnPage2 = (Button)findViewById(R.id.btnPage2);
+
+       /*
+        btnPage2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"go to page 2", Toast.LENGTH_LONG).show();
+            }
+        });
+*/
+
+    }
+
+
+
+
+    public void goToPage2(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, MainActivityTwo.class);
+        startActivity(intent);
     }
 
 
