@@ -14,14 +14,9 @@
         android:layout_height="100dp"
         android:scaleType="centerCrop"
         android:src="@drawable/cakesmall" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/eTxtMsg"
-        android:text="Enter in your message"
-        />
+
     <TextView
-        android:text="Happy 3rd Birthday!"
+        android:text="Farid's Demo App 2016"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
@@ -29,16 +24,6 @@
         />
 
 
-    <TextView
-        android:text="replace with txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:maxLines="6"
-        android:scrollbars="vertical"
-
-        android:id="@+id/txtMsg"
-        android:background="@android:color/darker_gray" />
 
 
 <LinearLayout
@@ -46,11 +31,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Secret Message"
-        android:id="@+id/btn_go" />
+
 
 
 
@@ -72,11 +53,19 @@
 
 
     <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Slide Drawer"
+    android:id="@+id/btnPage4"
+    android:onClick="goToPage4"
+    />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Slide Drawer"
-        android:id="@+id/btnPage4"
-        android:onClick="goToPage4"
+        android:text="Birthday Card"
+        android:id="@+id/btnPage5"
+        android:onClick="goToBirthdayCard"
         />
 </LinearLayout>
 

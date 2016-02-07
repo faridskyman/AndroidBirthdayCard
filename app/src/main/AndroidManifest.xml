@@ -40,6 +40,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.wizlearn.farid.birthdayibrahimcrd.MainActivity" />
         </activity>
+        <activity
+            android:name=".BirthdayCard"
+            android:label="@string/title_activity_birthday_card"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wizlearn.farid.birthdayibrahimcrd.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
