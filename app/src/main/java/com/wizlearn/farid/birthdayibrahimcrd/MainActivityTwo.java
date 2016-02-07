@@ -3,9 +3,12 @@ package com.wizlearn.farid.birthdayibrahimcrd;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
+import android.widget.Scroller;
 import android.widget.TextView;
 
 
@@ -23,9 +26,21 @@ public class MainActivityTwo extends ActionBarActivity {
         TextView txtView = new TextView(this);
         txtView.setTextSize(40);
         txtView.setText(message);
+        txtView.setMaxLines(6);
+        txtView.setVerticalScrollBarEnabled(true);
+        txtView.setMovementMethod(new ScrollingMovementMethod());
+        
+
+
+
+        //        android:maxLines="6"
+        // android:scrollbars="vertical"
 
         RelativeLayout rlo = (RelativeLayout)findViewById(R.id.rlContent);
         rlo.addView(txtView);
+
+
+
     }
 
 
