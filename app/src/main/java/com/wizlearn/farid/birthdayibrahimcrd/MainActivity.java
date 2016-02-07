@@ -50,7 +50,7 @@ public class MainActivity extends ActionBarActivity {
 
         //button page 2 action
 
-        Button btnPage2 = (Button)findViewById(R.id.btnPage2);
+       
 
        /*
         btnPage2.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +75,25 @@ public class MainActivity extends ActionBarActivity {
         intent.putExtra(EXTRA_MESSAGE,msg);
 
         startActivity(intent);
+    }
+
+    public void goToPage3(View view)
+    {
+        Intent intent = new Intent(this, LinearLayoutDemo.class);
+
+        EditText eTxt = (EditText)findViewById(R.id.eTxtMsg);
+        String msg = eTxt.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,msg);
+
+        startActivity(intent);
+    }
+
+    public  void goToPage4(View view)
+    {
+
+            Intent intent = new Intent(this, SlidingDrawers.class);
+            startActivity(intent);
+
     }
 
 

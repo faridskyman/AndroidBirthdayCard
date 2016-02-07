@@ -5,4 +5,5 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_main_activity_two">MainActivityTwo</string>
     <string name="title_activity_linear_layout_demo">LinearLayoutDemo</string>
+    <string name="title_activity_sliding_drawers">SlidingDrawers</string>
 </resources>
