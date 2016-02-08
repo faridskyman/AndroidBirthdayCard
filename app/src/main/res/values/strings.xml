@@ -7,4 +7,6 @@
     <string name="title_activity_linear_layout_demo">LinearLayoutDemo</string>
     <string name="title_activity_sliding_drawers">SlidingDrawers</string>
     <string name="title_activity_birthday_card">BirthdayCard</string>
+    <string name="title_activity_beach_view">beachView</string>
+    <string name="title_activity_course_list">CourseList</string>
 </resources>

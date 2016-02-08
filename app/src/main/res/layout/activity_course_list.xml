@@ -1,0 +1,184 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.wizlearn.farid.birthdayibrahimcrd.CourseList"
+    android:background="@android:color/white"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/coursethumb01"
+        android:scaleType="centerCrop"
+        android:id="@+id/imgThumb1"
+
+        />
+
+
+    <TextView android:text="Intro to Data Analytics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imgThumb1"
+        android:textSize="30dp"
+        android:id="@+id/txtvCourseTitle"
+        />
+
+    <TextView android:text="Data Analytics using NumPy and Pandas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtvCourseTitle"
+        android:textSize="20dp"
+        android:id="@+id/txtvCourseSubTitle"
+        android:textColor="@android:color/darker_gray"
+        />
+
+    <TextView android:text="BEGAINNERS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtvCourseSubTitle"
+        android:textSize="15dp"
+        android:textColor="@android:color/holo_blue_light"
+        />
+
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.wizlearn.farid.birthdayibrahimcrd.CourseList"
+        android:background="@android:color/white"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/coursethumb02"
+            android:scaleType="centerCrop"
+            android:id="@+id/imgThumb2"
+
+            />
+
+
+        <TextView android:text="Developing Android Apps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/imgThumb2"
+            android:textSize="30dp"
+            android:id="@+id/txtvCourseTitle2"
+            />
+
+        <TextView android:text="Android Fundementals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtvCourseTitle2"
+            android:textSize="20dp"
+            android:id="@+id/txtvCourseSubTitle2"
+            android:textColor="@android:color/darker_gray"
+            />
+
+        <TextView android:text="INTERMEDIATE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtvCourseSubTitle2"
+            android:textSize="15dp"
+            android:textColor="@android:color/holo_blue_light"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.wizlearn.farid.birthdayibrahimcrd.CourseList"
+        android:background="@android:color/white"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/coursethumb03"
+            android:scaleType="centerCrop"
+            android:id="@+id/imgThumb3"
+
+            />
+
+
+        <TextView android:text="Developing Office 365 Apps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/imgThumb3"
+            android:textSize="30dp"
+            android:id="@+id/txtvCourseTitle3"
+            />
+
+        <TextView android:text="Using Office 365 Web API"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtvCourseTitle3"
+            android:textSize="20dp"
+            android:id="@+id/txtvCourseSubTitle3"
+            android:textColor="@android:color/darker_gray"
+            />
+
+        <TextView android:text="INTERMEDIATE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtvCourseSubTitle3"
+            android:textSize="15dp"
+            android:textColor="@android:color/holo_blue_light"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+</ScrollView>

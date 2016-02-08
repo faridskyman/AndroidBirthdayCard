@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 
 
 
@@ -22,6 +24,8 @@ public class MainActivity extends ActionBarActivity {
 
 
     }
+
+
 
 
 
@@ -82,6 +86,16 @@ public class MainActivity extends ActionBarActivity {
             return true;
         }
 
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Alert")
+            .setMessage("This is an Alert, Take not of it.")
+            .setCancelable(true);
+
+
+
+
+
         Intent intent;
 
 
@@ -93,6 +107,17 @@ public class MainActivity extends ActionBarActivity {
                 return true;
             case R.id.menuLinear:
                 intent = new Intent(this, LinearLayoutDemo.class);
+                startActivity(intent);
+                return true;
+            case R.id.menuAlert:
+                builder.show();
+                return true;
+            case R.id.menuBeach:
+                intent = new Intent(this, beachView.class);
+                startActivity(intent);
+                return true;
+            case R.id.menuCourseList:
+                intent = new Intent(this, CourseList.class);
                 startActivity(intent);
                 return true;
             default:

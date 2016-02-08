@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+
+    tools:context="com.wizlearn.farid.birthdayibrahimcrd.SlidingDrawers">
+
+
+    <SlidingDrawer
+        android:id="@+id/drawer"
+        android:layout_width="200dip"
+        android:layout_height="240dip"
+        android:orientation="vertical"
+
+        android:handle="@+id/handle"
+        android:content="@+id/content" >
+
+        <ImageView
+            android:id="@+id/handle"
+            android:layout_width="24dip"
+            android:layout_height="44dip"
+            android:src="@drawable/cakesmall"
+            />
+
+        <AnalogClock
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/content"
+            android:background="@android:color/holo_green_light"
+            />
+
+
+
+        </SlidingDrawer>
+
+
+
+</RelativeLayout>

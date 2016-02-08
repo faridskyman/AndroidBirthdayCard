@@ -6,6 +6,15 @@
 
     <item android:id="@+id/menuLinear" android:title="Linear layout" />
 
+    <item android:id="@+id/menuAlert" android:title="Alert" />
+
+    <item android:id="@+id/menuBeach" android:title="Beach" />
+
+    <item android:id="@+id/menuCourseList" android:title="Course List" />
+
+
+
+
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
          />
 

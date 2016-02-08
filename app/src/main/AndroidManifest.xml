@@ -48,6 +48,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.wizlearn.farid.birthdayibrahimcrd.MainActivity" />
         </activity>
+        <activity
+            android:name=".beachView"
+            android:label="@string/title_activity_beach_view"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wizlearn.farid.birthdayibrahimcrd.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CourseList"
+            android:label="@string/title_activity_course_list"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wizlearn.farid.birthdayibrahimcrd.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
