@@ -6,75 +6,78 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".MainActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+
 
         <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-
+        android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/starwars" />
+        android:src="@drawable/starwars"
+            android:layout_weight="1" />
 
         <TextView
-        android:text="Farid's Demo App 2016"
+        android:text="Farid's App Demo 2016"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:textStyle="bold"
+            android:layout_margin="16dp"
+            />
+
+
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:layout_margin="8dp"
+            >
+
+
+
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Page 2"
+        android:id="@+id/btnPage2"
+        android:onClick="goToPage2"
+            android:layout_margin="8dp"
+        />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linear Layout"
+        android:id="@+id/btnPage3"
+        android:onClick="goToPage3"
+            android:layout_margin="8dp"
         />
 
 
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide Drawer"
+        android:id="@+id/btnPage4"
+        android:onClick="goToPage4"
+            android:layout_margin="8dp"
+        />
 
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday Card"
+        android:id="@+id/btnPage5"
+        android:onClick="goToBirthdayCard"
+            android:layout_margin="8dp"
+        />
+        </LinearLayout>
+        </HorizontalScrollView>
 
-<LinearLayout
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
->
-
-
-
-
-<Button
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="Go to Page 2"
-android:id="@+id/btnPage2"
-android:onClick="goToPage2"
-/>
-
-<Button
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="Linear Layout"
-android:id="@+id/btnPage3"
-android:onClick="goToPage3"
-/>
-
-
-<Button
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="Slide Drawer"
-android:id="@+id/btnPage4"
-android:onClick="goToPage4"
-/>
-
-<Button
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="Birthday Card"
-android:id="@+id/btnPage5"
-android:onClick="goToBirthdayCard"
-/>
-</LinearLayout>
-
-
-</LinearLayout>
 
 </LinearLayout>
